@@ -13,6 +13,9 @@ module.exports = {
             '13': '3.25rem',
             '14': '3.5rem',
             '15': '3.75rem'
+        },
+        transitionDuration: {
+            '80': '80ms'
         }
     },
   },
