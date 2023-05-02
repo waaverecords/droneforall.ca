@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import $ from 'jquery';
 import 'tilt.js';
 import { useEffect } from 'react';
+import { Button } from '@/components/button';
 
 declare global {
     interface JQuery<TElement = HTMLElement> {
@@ -30,6 +31,7 @@ export default function Home() {
         >
             <header
                 className={`
+                    flex justify-between
                     py-6
                 `}
             >
@@ -42,6 +44,9 @@ export default function Home() {
                         Drone for All
                     </h1>
                 </a>
+                <Button>
+                    Contact us
+                </Button>
             </header>
             <main>
                 <div
