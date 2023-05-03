@@ -33,6 +33,7 @@ export default function Home() {
                 className={`
                     flex justify-between
                     py-6
+                    mb-20
                 `}
             >
                 <a
@@ -63,21 +64,45 @@ export default function Home() {
                         <Image
                             src={'/images/hero.jpg'}
                             alt="hero"
-                            width={378}
-                            height={552}
-                            className="js-tilt rounded-[500px]"
+                            width={454}
+                            height={663}
+                            className="
+                                w-[378px] h-[552px]
+                                sm:w-[454px] sm:h-[663px]
+                                lg:w-[428px] md:h-[625px]
+                                xl:w-[454px] xl:h-[663px]
+                                overflow-hidden
+                                rounded-[500px]
+                                js-tilt
+                            "
                         />
                     </div>
                     <div
-                        className="order-2 md:order-1"
+                        className="
+                            flex-1
+                            order-2 md:order-1
+                        "
                     >
                         <h2
                             className="
-                                text-5xl font-bold leading-15
+                                text-[50px] sm:text-6xl xl:text-[70px] 2xl:text-[90px]
+                                font-bold leading-15
+                                mb-15
                             "
                         >
                             Drone Cleaning Services
                         </h2>
+                        <div
+                            className="
+                                flex gap-5
+                            "
+                        >
+                            <Button
+                                reverse
+                            >
+                                Our services
+                            </Button>
+                        </div>
                     </div>
                 </div>
                 <div

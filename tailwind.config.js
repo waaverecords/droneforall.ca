@@ -20,6 +20,9 @@ module.exports = {
         height: {
             '15': '3.75rem'
         },
+        margin: {
+            '15': '3.75rem'
+        },
         animation: {
             wipein: 'wipein 0.7s steps(29) forwards',
             wipeout: 'wipeout 0.7s steps(29) forwards',

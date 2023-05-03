@@ -1,11 +1,14 @@
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface ButtonProps {
     children?: ReactNode;
+    reverse?: boolean;
 }
 
 export function Button({
-    children
+    children,
+    reverse
 }: ButtonProps) {
     return <div
         className="
@@ -14,6 +17,8 @@ export function Button({
             font-bold
             border border-black
             rounded-md
+
+            active:scale-95
         "
     >
         <span
@@ -30,14 +35,17 @@ export function Button({
                 WebkitMask: 'url(/images/button-sprite.png)',
                 WebkitMaskSize: '3000% 100%'
             }}
-            className="
-                w-full h-full
-                px-7
-                bg-black
-                text-white
+            className={twMerge(
+                `
+                    w-full h-full
+                    px-7
+                    bg-black
+                    text-white
 
-                animate-wipein hover:animate-wipeout
-            "
+                    animate-wipein hover:animate-wipeout
+                `,
+                reverse && 'animate-wipeout hover:animate-wipein'
+            )}
         >
             {children}
         </button>
