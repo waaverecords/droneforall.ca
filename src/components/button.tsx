@@ -41,9 +41,8 @@ export function Button({
                     px-7
                     bg-black
                     text-white
-
-                    animate-wipein hover:animate-wipeout
                 `,
+                !reverse && 'animate-wipein hover:animate-wipeout',
                 reverse && 'animate-wipeout hover:animate-wipein'
             )}
         >
