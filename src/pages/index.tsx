@@ -56,27 +56,21 @@ export default function Home() {
                     `
                     }
                 >
-                    <div
+                    <img
+                        src={'/images/hero.jpg'}
+                        alt="hero"
                         className="
+                            w-[378px] max-h-[552px]
+                            sm:w-[454px] sm:max-h-[663px]
+                            lg:w-[428px] md:max-h-[625px]
+                            xl:w-[454px] xl:max-h-[663px]
+
+                            rounded-[500px]
+                            js-tilt
+
                             order-1 md:order-2
                         "
-                    >
-                        <Image
-                            src={'/images/hero.jpg'}
-                            alt="hero"
-                            width={454}
-                            height={663}
-                            className="
-                                w-[378px] h-[552px]
-                                sm:w-[454px] sm:h-[663px]
-                                lg:w-[428px] md:h-[625px]
-                                xl:w-[454px] xl:h-[663px]
-                                overflow-hidden
-                                rounded-[500px]
-                                js-tilt
-                            "
-                        />
-                    </div>
+                    />
                     <div
                         className="
                             flex-1
